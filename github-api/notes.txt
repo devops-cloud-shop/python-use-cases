@@ -1,3 +1,4 @@
 1. Virtual environments
 2. Libraries
+3. How to install libraries  (libraries is a collection of packages)
 3. How to store secret values and prevent pushing it to git
