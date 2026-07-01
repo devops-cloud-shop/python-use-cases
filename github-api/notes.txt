@@ -1,4 +1,11 @@
 1. Virtual environments
+   create - python -m venv github-api
+   To activate - source github-api/Scripts/activate #env will be activated
 2. Libraries
+    - python.exe -m pip install --upgrade pip #to upgrade pip
+    - pip list # to know the pakgs installed in this environment.
 3. How to install libraries  (libraries is a collection of packages)
+    - pip install -r requirements.txt  #requests is not a inbuilt lib, so we include this in requtms.txt file, also to inform user to install specific packages
+
 3. How to store secret values and prevent pushing it to git
+    - create token and store them in .env file as key value, include .env in .gitignore file
