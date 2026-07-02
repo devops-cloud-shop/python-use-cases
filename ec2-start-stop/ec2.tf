@@ -1,5 +1,5 @@
 resource "aws_spot_instance_request" "workstation" {
-  ami                    = data.aws_ami.centos8.id
+  ami                    = data.aws_ami.prav-devops.id
   instance_type          = var.instance_type
   vpc_security_group_ids = [aws_security_group.allow_all_1.id]
   spot_type              = "persistent"
