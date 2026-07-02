@@ -10,7 +10,7 @@
 4. How to store secret values and prevent pushing it to git
     - create token and store them in .env file as key value, include .env in .gitignore file
 
-5. Pagination: If you have lots of data in the database, we would like to fetch them in batches with a certain batch size
+5. Pagination: If you have lots of data in the database, we would like to fetch them in batches with a certain batch size(ex- 100 per page)
 
 1. Fetch logs from cloudwatch and store them to a file
 2. Deploy python script to AWS lambda to start as well stop instances
