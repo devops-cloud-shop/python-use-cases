@@ -41,3 +41,4 @@ github-api/Include/
 github-api/Lib/
 github-api/Scripts/
 github-api/pyvenv.cfg
+ec2-start-stop/venv
