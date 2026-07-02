@@ -15,12 +15,12 @@ config = dotenv_values(r".env")
 
 # Configuration
 github_token = config.get("github_token")
-user_name = 'Prav-Akula/devops-cloud-shop'
-repo_name = 'terraform-python-ec2'
+org_name = 'devops-cloud-shop'
+repo_name = 'python-ec2'
 description = 'This repo is to discuss about python usecases'
 
 # GitHub API URL for creating a repository within an organization
-url = f'https://api.github.com/user/repos'
+url = f'https://api.github.com/orgs/{org_name}/repos'
 
 # Headers and payload
 headers = {
@@ -39,8 +39,8 @@ response = requests.post(url, headers=headers, data=json.dumps(payload))
 
 # Check the response
 if response.status_code == 201: # 201, created. it means success
-    print(f'Repository {repo_name} created successfully within {user_name}.')
+    print(f'Repository {repo_name} created successfully within {org_name}.')
     print(f'Repository URL: {response.json()["html_url"]}')
 else:
-    print(f'Failed to create repository in {user_name}. Status code: {response.status_code}')
+    print(f'Failed to create repository in {org_name}. Status code: {response.status_code}')
     print(f'Response: {response.text}')
