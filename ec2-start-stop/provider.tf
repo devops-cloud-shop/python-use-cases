@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "python-use-cases"
+    bucket         = "daws86s-roboshop-infra-dev"
     key            = "ec2-start-stop"
     region         = "us-east-1"
     use_lockfile   = true
