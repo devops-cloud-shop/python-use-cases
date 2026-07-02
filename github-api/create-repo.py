@@ -20,7 +20,8 @@ repo_name = 'python-ec2'
 description = 'This repo is to discuss about python usecases'
 
 # GitHub API URL for creating a repository within an organization
-url = f'https://api.github.com/orgs/{org_name}/repos'
+url = f'https://api.github.com/orgs/{org_name}/repos' #url = f'https://api.github.com/user/repos' creating in the users profile-repos
+
 
 # Headers and payload
 headers = {
