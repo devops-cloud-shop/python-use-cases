@@ -15,7 +15,7 @@ config = dotenv_values(r".env")
 
 # Configuration
 github_token = config.get("github_token")
-user_name = 'Prav-Akula'
+user_name = 'Prav-Akula/devops-cloud-shop'
 repo_name = 'terraform-python-ec2'
 description = 'This repo is to discuss about python usecases'
 
