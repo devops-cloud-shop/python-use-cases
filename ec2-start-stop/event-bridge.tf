@@ -1,13 +1,13 @@
 resource "aws_cloudwatch_event_rule" "ec2_auto_stop_rule" {
   name                = "ec2-auto-stop-weekdays-8pm"
   description         = "Triggers EC2 auto-stop at 8 PM on weekdays"
-  schedule_expression = "cron(46 19 ? * MON-FRI *)" # 8 PM UTC, Monday to Friday
+  schedule_expression = "cron(0 1 ? * TUE-SAT *)" # 8 PM UTC, Monday to Friday,, Monday 8:00 PM (UTC-5) → Tuesday 1:00 AM UTC
 }
 
 resource "aws_cloudwatch_event_rule" "ec2_auto_start_rule" {
   name                = "ec2-auto-start-weekdays-8am"
   description         = "Triggers EC2 auto-start at 8 AM on weekdays"
-  schedule_expression = "cron(49 19 ? * MON-FRI *)" # 8 AM UTC, Monday to Friday
+  schedule_expression = "cron(0 13 ? * MON-FRI *)" # 8 AM UTC, Monday to Friday
 }
 
 resource "aws_cloudwatch_event_target" "ec2_auto_stop_target" {
