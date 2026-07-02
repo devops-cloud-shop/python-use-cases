@@ -37,3 +37,7 @@ terraform.rc
 # Python environment
 devops
 .env
+github-api/Include/
+github-api/Lib/
+github-api/Scripts/
+github-api/pyvenv.cfg
